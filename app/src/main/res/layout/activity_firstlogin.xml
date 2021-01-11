@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".firstlogin"
+    android:padding="10dp"
+    android:background="@drawable/weddingphoto">
+    <TextView
+        android:id="@+id/Header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:textSize="48dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Selamat Datang Di UNION" />
+
+    <Button
+        android:id="@+id/Btn_Daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="68dp"
+        android:background="@color/maincolor"
+        android:text="Daftar"
+        android:onClick="homekedaftar"/>
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:text="Sudah Dafter ?"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/Btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/maincolor"
+        android:onClick="homekelogin"/>
+
+</LinearLayout>

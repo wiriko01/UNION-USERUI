@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".layoutlogin">
+
+    <TextView
+        android:id="@+id/textViewLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN UNION"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewLogin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login dengan"
+        android:textSize="15dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonLogin1"
+            android:layout_height="30dp"
+            android:layout_width="160dp"
+            android:text="Google"
+            android:textSize="10dp"
+            android:background="@color/maincolor"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/buttonLogin2"
+            android:layout_toRightOf="@+id/buttonLogin1"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:text="Line"
+            android:textColor="@color/white"
+            android:background="@color/maincolor"
+            android:layout_marginLeft="80dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewLogin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atau"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/EditTextLogin1"
+        android:layout_width="380dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/EditTextLLogin2"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@color/maincolor"
+        android:onClick="homekeloginpertamakali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/maincolor"
+        android:text="Lupa Password"
+        android:layout_gravity="center"
+        android:onClick="homekelupapassword"/>
+</LinearLayout>

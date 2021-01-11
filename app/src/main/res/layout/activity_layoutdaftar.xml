@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".layoutdaftar">
+
+    <TextView
+        android:id="@+id/textViewDaftar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR UNION"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewDaftar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar dengan"
+        android:textSize="15dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonDaftar1"
+            android:layout_height="30dp"
+            android:layout_width="170dp"
+            android:text="Google"
+            android:textSize="10dp"
+            android:background="@color/maincolor"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/buttonDaftar2"
+            android:layout_toRightOf="@+id/buttonDaftar1"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:text="Line"
+            android:textColor="@color/white"
+            android:background="@color/maincolor"
+            android:layout_marginLeft="80dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewDaftar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atau"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/EditTextDaftar1"
+            android:layout_width="150dp"
+            android:inputType="textPersonName"
+            android:hint="Nama Depan"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/EditTextDaftar2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Nama Belakang"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@+id/EditTextDaftar1"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/EditTextDaftar3"
+        android:layout_width="380dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/EditTextDaftar4"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/EditTextDaftar5"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:hint="Konfirmasi Password"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <Button
+        android:id="@+id/buttonDaftar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@color/maincolor"
+        android:onClick="SelesaiDaftar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewDaftar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun ?"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewDaftar6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/maincolor"
+            android:layout_toRightOf="@+id/textViewDaftar5"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>

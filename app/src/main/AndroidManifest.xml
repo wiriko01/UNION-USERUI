@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.union_user">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".firstlogin"></activity>
+        <activity android:name=".bottomnav" />
+        <activity android:name=".halamanvendor" />
+        <activity android:name=".layoutvendor" />
+        <activity android:name=".layouttoko" />
+        <activity android:name=".layoutpengaturan" />
+        <activity
+            android:name=".layoutlupapassword"
+            android:label="LUPA PASSWORD"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".layoutlogin"
+            android:label="LOGIN"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".layouthome" />
+        <activity android:name=".layoutdaftar" />
+        <activity android:name=".layoutakun" />
+        <activity
+            android:name=".firsthomelogin05"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
+        <activity android:name=".firsthomelogin04" />
+        <activity
+            android:name=".firsthomelogin03"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
+        <activity
+            android:name=".firsthomelogin02"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
+        <activity
+            android:name=".firstloginhome01"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
+        <activity
+            android:name=".firstloginhome"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginactivity" />
+    </application>
+
+</manifest>

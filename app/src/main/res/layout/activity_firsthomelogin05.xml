@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".firsthomelogin05">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp">
+
+        <TextView
+            android:id="@+id/TextViewhome051"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data yang diisi akan membantu kami dalam
+        memberikan vendor dan rekomendasi yang lebih baik dengan
+        memberitahu sedikit tentang kamu dan rencana pernikahan kamu"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/TextViewhome052"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berapa banyak jumlah tamu yang kita undang"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittexthome053"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                />
+            <TextView
+                android:id="@id/TextViewhome052"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:text="Tamu"
+                android:layout_toRightOf="@id/edittexthome053"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        <RadioButton
+            android:id="@+id/RadioBUttonhome41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kami belum memutuskannya"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_marginTop="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/secure"/>
+
+        <TextView
+            android:id="@+id/TextViewhome034"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jangan Khawatir, kamu akan dapat mengupdate
+                kembali data ini lagi!"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="270dp"/>
+        <Button
+            android:id="@+id/Btnhome033"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:text="Lanjut"
+            android:textColor="@color/white"
+            android:background="@color/maincolor"
+            android:onClick="firsthomelogin5kelogin"/>
+    </RelativeLayout>
+</LinearLayout>

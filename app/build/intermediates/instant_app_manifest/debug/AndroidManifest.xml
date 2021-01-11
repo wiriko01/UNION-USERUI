@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.union_user"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.union_user.firstlogin" />
+        <activity android:name="com.example.union_user.bottomnav" />
+        <activity android:name="com.example.union_user.halamanvendor" />
+        <activity android:name="com.example.union_user.layoutvendor" />
+        <activity android:name="com.example.union_user.layouttoko" />
+        <activity android:name="com.example.union_user.layoutpengaturan" />
+        <activity
+            android:name="com.example.union_user.layoutlupapassword"
+            android:label="LUPA PASSWORD"
+            android:parentActivityName="com.example.union_user.MainActivity" />
+        <activity
+            android:name="com.example.union_user.layoutlogin"
+            android:label="LOGIN"
+            android:parentActivityName="com.example.union_user.MainActivity" />
+        <activity android:name="com.example.union_user.layouthome" />
+        <activity android:name="com.example.union_user.layoutdaftar" />
+        <activity android:name="com.example.union_user.layoutakun" />
+        <activity
+            android:name="com.example.union_user.firsthomelogin05"
+            android:label="DATA DASAR"
+            android:parentActivityName="com.example.union_user.layouthome" />
+        <activity android:name="com.example.union_user.firsthomelogin04" />
+        <activity
+            android:name="com.example.union_user.firsthomelogin03"
+            android:label="DATA DASAR"
+            android:parentActivityName="com.example.union_user.layouthome" />
+        <activity
+            android:name="com.example.union_user.firsthomelogin02"
+            android:label="DATA DASAR"
+            android:parentActivityName="com.example.union_user.layouthome" />
+        <activity
+            android:name="com.example.union_user.firstloginhome01"
+            android:label="DATA DASAR"
+            android:parentActivityName="com.example.union_user.layouthome" />
+        <activity
+            android:name="com.example.union_user.firstloginhome"
+            android:label="DATA DASAR"
+            android:parentActivityName="com.example.union_user.layouthome" />
+        <activity android:name="com.example.union_user.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.union_user.loginactivity" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.union_user.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>
