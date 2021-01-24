@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.union_user.firstlogin" />
+        <activity android:name="com.example.union_user.MainActivity" />
         <activity android:name="com.example.union_user.bottomnav" />
         <activity android:name="com.example.union_user.halamanvendor" />
         <activity android:name="com.example.union_user.layoutvendor" />
@@ -57,14 +57,13 @@
             android:name="com.example.union_user.firstloginhome"
             android:label="DATA DASAR"
             android:parentActivityName="com.example.union_user.layouthome" />
-        <activity android:name="com.example.union_user.MainActivity" >
+        <activity android:name="com.example.union_user.firstlogin" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.union_user.loginactivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

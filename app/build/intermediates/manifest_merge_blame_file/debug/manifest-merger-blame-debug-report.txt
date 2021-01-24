@@ -11,7 +11,7 @@
 9-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:5:5-58:19
+11-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:5:5-57:19
 12        android:allowBackup="true"
 12-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,9 +28,9 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.union_user.firstlogin" />
-21-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:12:9-57
-21-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:12:19-45
+21        <activity android:name="com.example.union_user.MainActivity" />
+21-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:12:9-59
+21-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:12:19-47
 22        <activity android:name="com.example.union_user.bottomnav" />
 22-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:13:9-47
 22-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:13:19-44
@@ -114,9 +114,9 @@
 57-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:48:13-39
 58            android:parentActivityName="com.example.union_user.layouthome" />
 58-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:49:13-53
-59        <activity android:name="com.example.union_user.MainActivity" >
+59        <activity android:name="com.example.union_user.firstlogin" >
 59-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:50:9-56:20
-59-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:50:19-47
+59-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:50:19-45
 60            <intent-filter>
 60-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:51:13-55:29
 61                <action android:name="android.intent.action.MAIN" />
@@ -128,18 +128,15 @@
 63-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:54:27-74
 64            </intent-filter>
 65        </activity>
-66        <activity android:name="com.example.union_user.loginactivity" />
-66-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:57:9-51
-66-->D:\File\Note\Semester 5\UAS\PKTI\UNION_Android\app\src\main\AndroidManifest.xml:57:19-48
-67
-68        <provider
-68-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-69            android:name="com.squareup.picasso.PicassoProvider"
-69-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-70            android:authorities="com.example.union_user.com.squareup.picasso"
-70-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-71            android:exported="false" />
-71-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-72    </application>
-73
-74</manifest>
+66
+67        <provider
+67-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+68            android:name="com.squareup.picasso.PicassoProvider"
+68-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+69            android:authorities="com.example.union_user.com.squareup.picasso"
+69-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+70            android:exported="false" />
+70-->[com.squareup.picasso:picasso:2.71828] C:\Users\ludius\.gradle\caches\transforms-2\files-2.1\d3b077cfb9809b0e5b36b2a4a7780033\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+71    </application>
+72
+73</manifest>

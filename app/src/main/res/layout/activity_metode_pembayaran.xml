@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodePembayaran"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="10dp">
+    <Button
+        android:id="@+id/BtnPembayaran1"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Bayar di Tempat"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/imagepembayaran1"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:src="@drawable/littlearrow1"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-64dp"/>
+    <Button
+        android:id="@+id/BtnPembayaran2"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Bayar dengan cicilan"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/imagepembayaran2"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:src="@drawable/littlearrow1"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-64dp"/>
+    <Button
+        android:id="@+id/BtnPembayaran3"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Kredit / Kartu Debit"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/imagepembayaran3"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:src="@drawable/littlearrow1"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-64dp"/>
+
+
+</LinearLayout>

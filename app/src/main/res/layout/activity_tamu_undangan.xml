@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TamuUndangan"
+    android:background="@color/grey"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textviewtamuundangan1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="terdaftar di aplikasi"
+        android:gravity="center"
+        android:background="@color/white" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_search_icon"
+        android:layout_marginTop="-32dp"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttontambah1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/buttonhapus1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/buttontambah1"/>
+    </RelativeLayout>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:text="     Tamu 1                In app                  Alamat 1"
+    android:gravity="center"
+    android:background="@color/white"
+    android:textColor="@color/Black"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/profile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="     Tamu 2                Manual                  Alamat 2"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/Black"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/profile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudah lengkap?"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:layout_marginTop="250dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Btnhome033"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Buat Undangan"
+        android:textColor="@color/white"
+        android:background="@color/maincolor"/>
+</LinearLayout>

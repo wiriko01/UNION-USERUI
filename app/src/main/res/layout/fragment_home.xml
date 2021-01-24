@@ -4,14 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:padding="5dp">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Update Data Pernikahan"
         android:layout_marginTop="10dp"
-        android:background="@color/white" />
+        android:background="@color/maincolor"
+        android:textColor="@color/white"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,7 +102,7 @@
                     android:id="@+id/ImageViewHome4"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning1"/>
                 <TextView
                     android:id="@+id/TextViewHome008"
                     android:layout_width="150dp"
@@ -151,7 +153,7 @@
                     android:id="@+id/ImageViewHome10"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning2"/>
                 <TextView
                     android:id="@+id/TextViewHome009"
                     android:layout_width="150dp"
@@ -202,7 +204,7 @@
                     android:id="@+id/ImageViewHome16"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning3"/>
                 <TextView
                     android:id="@+id/TextViewHome0010"
                     android:layout_width="150dp"
@@ -244,6 +246,177 @@
                     android:background="@mipmap/ic_star"
                     android:layout_below="@id/TextViewHome0010"
                     android:layout_toRightOf="@id/ImageViewHome20"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/TextViewHome0011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Restaurant di Medan"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ImageViewHome22"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning1"/>
+                <TextView
+                    android:id="@+id/TextViewHome0012"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant 1"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome22"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome23"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome23"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome25"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome24"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome26"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome25"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome27"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome26"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/ImageViewHome28"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning2"/>
+                <TextView
+                    android:id="@+id/TextViewHome013"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wedding Planning 2"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome28"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome29"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome30"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome29"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome31"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome30"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome32"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome31"/>
+                <ImageView
+                    android:id="@+id/ImageViewHom33"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome32"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/ImageViewHome34"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning3"/>
+                <TextView
+                    android:id="@+id/TextViewHome0014"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wedding Planning 2"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome34"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome35"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome36"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome35"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome37"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome36"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome38"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome37"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome39"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome38"/>
             </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>

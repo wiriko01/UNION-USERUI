@@ -12,7 +12,7 @@ class firsthomelogin05 : AppCompatActivity() {
     }
 
     fun firsthomelogin5kelogin(view: View) {
-        var firsthomelogin5 = Intent(this,layouthome::class.java)
+        var firsthomelogin5 = Intent(this,MainActivity::class.java)
         startActivity(firsthomelogin5)
     }
 }

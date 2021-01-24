@@ -51,4 +51,5 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.android.support:appcompat-v7:30.2.0'
     implementation 'com.google.android.material:material:1.2.0-alpha01'
+
 }

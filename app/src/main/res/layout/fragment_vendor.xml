@@ -86,16 +86,32 @@
                 android:id="@+id/ImageViewVendor1"
                 android:layout_width="180dp"
                 android:layout_height="100dp"
-                android:background="@color/grey"
+                android:background="@drawable/marryimg4"
                 android:layout_below="@id/TextViewVendor2"/>
+            <TextView
+                android:id="@+id/textveiwvendor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservation place"
+                android:textColor="@color/Black"
+                android:layout_below="@id/ImageViewVendor1"/>
             <ImageView
                 android:id="@+id/ImageViewVendor2"
                 android:layout_width="180dp"
                 android:layout_height="100dp"
-                android:background="@color/grey"
+                android:background="@drawable/marryimg5"
                 android:layout_below="@id/TextViewVendor2"
                 android:layout_toRightOf="@id/ImageViewVendor1"
                 android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/textveiwvendor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decoration"
+                android:textColor="@color/Black"
+                android:layout_below="@id/ImageViewVendor1"
+                android:layout_toRightOf="@id/textveiwvendor3"
+                android:layout_marginLeft="90dp"/>
         </RelativeLayout>
     </LinearLayout>
 </FrameLayout>

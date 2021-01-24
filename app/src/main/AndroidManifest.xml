@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".firstlogin"></activity>
+        <activity android:name=".RincianVendor"></activity>
+        <activity android:name=".MetodePembayaran" />
+        <activity android:name=".PesananActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".TamuUndangan" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".bottomnav" />
         <activity android:name=".halamanvendor" />
         <activity android:name=".layoutvendor" />
@@ -47,14 +53,13 @@
             android:name=".firstloginhome"
             android:label="DATA DASAR"
             android:parentActivityName=".layouthome" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".firstlogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".loginactivity" />
     </application>
 
 </manifest>
