@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\File\\Note\\Semester 5\\UAS\\PKTI\\UNION_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "D:\\File\\Note\\Semester 5\\UNION_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ludius\\.gradle\\caches\\transforms-2\\files-2.1\\cb41504758358229362623f387f049fe\\material-1.2.0-alpha01\\res\\values-small-v4\\values-small-v4.xml",

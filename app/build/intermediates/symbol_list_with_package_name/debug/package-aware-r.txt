@@ -1551,6 +1551,7 @@ drawable avd_show_password
 drawable background1
 drawable band1
 drawable borderbuttongrey
+drawable box1
 drawable bride1
 drawable bride2
 drawable bride3
@@ -1563,6 +1564,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable cake1
+drawable chat
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1593,6 +1595,7 @@ drawable ic_profile_user
 drawable ic_search_icon
 drawable ic_shop
 drawable ic_storyboard
+drawable littlearrow1
 drawable location
 drawable marryimg2
 drawable marryimg3
@@ -1622,7 +1625,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable people1
+drawable phone
 drawable photographer1
+drawable pricelist
 drawable profile
 drawable secure
 drawable selection_band_overlay
@@ -1631,6 +1636,7 @@ drawable silverring1
 drawable store
 drawable storyboard
 drawable test_custom_background
+drawable tick
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable utama_foreground
@@ -1652,6 +1658,9 @@ id BOTTOM_START
 id Btn1
 id BtnHome001
 id BtnKirimLupa1
+id BtnPembayaran1
+id BtnPembayaran2
+id BtnPembayaran3
 id Btn_Daftar
 id Btn_Login
 id Btnhome011
@@ -1666,7 +1675,11 @@ id Btnpengaturan4
 id Btnpengaturan5
 id Btnpengaturan6
 id BtnpengaturanLogOut
-id ButtonToko1
+id Btnpesanan1
+id Btnpesanan2
+id Btnpesanan3
+id Btnvendor1
+id Btnvendor2
 id ButtonVendor1
 id ButtonVendor2
 id ButtonVendor3
@@ -1684,7 +1697,6 @@ id FUNCTION
 id Header1
 id ImageViewHom15
 id ImageViewHom33
-id ImageViewHome1
 id ImageViewHome10
 id ImageViewHome11
 id ImageViewHome12
@@ -1694,7 +1706,6 @@ id ImageViewHome16
 id ImageViewHome17
 id ImageViewHome18
 id ImageViewHome19
-id ImageViewHome2
 id ImageViewHome20
 id ImageViewHome21
 id ImageViewHome22
@@ -1705,7 +1716,6 @@ id ImageViewHome26
 id ImageViewHome27
 id ImageViewHome28
 id ImageViewHome29
-id ImageViewHome3
 id ImageViewHome30
 id ImageViewHome31
 id ImageViewHome32
@@ -1760,7 +1770,6 @@ id TextViewHome007
 id TextViewHome008
 id TextViewHome009
 id TextViewHome013
-id TextViewToko1
 id TextViewToko2
 id TextViewToko3
 id TextViewToko4
@@ -1856,7 +1865,6 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
-id bottom_navigation
 id bounce
 id button3
 id buttonDaftar1
@@ -1865,8 +1873,9 @@ id buttonDaftar3
 id buttonLogin1
 id buttonLogin2
 id buttonLogin3
-id buttonNavigationView
 id buttonPanel
+id buttonhapus1
+id buttontambah1
 id cache_measures
 id cancel_action
 id cancel_button
@@ -1916,6 +1925,7 @@ id direct
 id disableHome
 id disablePostScroll
 id disableScroll
+id divider1
 id dragDown
 id dragEnd
 id dragLeft
@@ -1953,7 +1963,6 @@ id fixed
 id flip
 id flow
 id forever
-id frameContainer
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1974,7 +1983,29 @@ id ignore
 id ignoreRequest
 id image
 id imageView1
-id imageView2
+id imagehalamanvendor1
+id imagehalamanvendor2
+id imagehalamanvendor3
+id imagehalamanvendor4
+id imagehalamanvendor5
+id imagehalamanvendor6
+id imagehalamanvendor7
+id imagepembayaran1
+id imagepembayaran2
+id imagepembayaran3
+id imagepesanan1
+id imagepesanan2
+id imagepesanan3
+id imagerincianvendor1
+id imagerincianvendor2
+id imagerincianvendor3
+id imagerincianvendor4
+id imagerincianvendor5
+id imageviewdivH1
+id imageviewdivH2
+id imageviewdivH3
+id imageviewdivH4
+id imageviewdivH5
 id imageviewide1
 id imageviewide2
 id imageviewide3
@@ -2028,13 +2059,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id mypager
 id navigation_header_container
-id navigationhome
-id navigationide
-id navigationprofile
-id navigationshop
-id navigationvendor
 id never
 id noScroll
 id none
@@ -2046,11 +2071,6 @@ id off
 id on
 id outline
 id packed
-id page_1
-id page_2
-id page_3
-id page_4
-id page_5
 id parallax
 id parent
 id parentPanel
@@ -2061,6 +2081,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pesanandivider1
 id pin
 id position
 id postLayout
@@ -2070,6 +2091,7 @@ id radio
 id radioButton
 id ratio
 id rectangles
+id rel1
 id reverseSawtooth
 id right
 id right_icon
@@ -2085,6 +2107,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search1
 id search_badge
 id search_bar
 id search_button
@@ -2131,7 +2154,6 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
-id tablayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2159,20 +2181,39 @@ id textViewLogin4
 id textViewakun1
 id text_input_end_icon
 id text_input_start_icon
+id texthalamanvendor1
+id texthalamanvendor2
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textinput_prefix_text
 id textinput_suffix_text
+id textpesanan1
+id textpesanan2
+id textpesanan3
+id textpesanan4
+id textpesanan5
+id textrincianvendor1
+id textrincianvendor2
+id textrincianvendor3
+id textrincianvendor4
+id textrincianvendor5
+id textrincianvendor6
+id textrincianvendor8
 id textveiwvendor3
 id textveiwvendor4
 id textviewLupa1
+id textviewdivH1
+id textviewdivH2
+id textviewdivH3
+id textviewdivH4
+id textviewdivH5
+id textviewtamuundangan1
 id time
 id title
 id titleDividerNoCustom
 id title_template
 id toggle
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2184,6 +2225,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtnotif1
 id txtview1
 id unchecked
 id uniform
@@ -2191,8 +2233,8 @@ id unlabeled
 id up
 id useLogo
 id vertical
-id viewDivider
 id view_offset_helper
+id viewhomedivider
 id viewtest1
 id viewtest2
 id visible
@@ -2261,7 +2303,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_bottomnav
 layout activity_firsthomelogin02
 layout activity_firsthomelogin03
 layout activity_firsthomelogin04
@@ -2270,6 +2311,7 @@ layout activity_firstlogin
 layout activity_firstloginhome
 layout activity_firstloginhome01
 layout activity_halamanvendor
+layout activity_ide
 layout activity_layoutakun
 layout activity_layoutdaftar
 layout activity_layouthome
@@ -2278,7 +2320,12 @@ layout activity_layoutlupapassword
 layout activity_layoutpengaturan
 layout activity_layouttoko
 layout activity_layoutvendor
-layout activity_main
+layout activity_metode_pembayaran
+layout activity_notification
+layout activity_pesanan
+layout activity_rincian_vendor
+layout activity_search
+layout activity_tamu_undangan
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2295,13 +2342,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_home
-layout fragment_ide
-layout fragment_profile
-layout fragment_shop
-layout fragment_tab1_ide
-layout fragment_tab2_ide
-layout fragment_vendor
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2362,8 +2402,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout view_carousel
-menu bottom_app_bar
-menu bottom_navigation_bar
+mipmap box1
 mipmap ic_
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -3155,6 +3194,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style noAction
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

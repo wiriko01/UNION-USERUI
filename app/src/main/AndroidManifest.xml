@@ -8,27 +8,36 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".RincianVendor"></activity>
-        <activity android:name=".MetodePembayaran" />
-        <activity android:name=".PesananActivity" />
-        <activity android:name=".NotificationActivity" />
-        <activity android:name=".SearchActivity" />
-        <activity android:name=".TamuUndangan" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".bottomnav" />
-        <activity android:name=".halamanvendor" />
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <activity android:name=".IdeActivity"></activity>
+        <activity android:name=".RincianVendor"
+            android:parentActivityName=".layoutvendor"/>
+        <activity android:name=".MetodePembayaran"
+            android:parentActivityName=".PesananActivity"/>
+        <activity android:name=".PesananActivity"
+            android:parentActivityName=".layouthome"/>
+        <activity android:name=".NotificationActivity"
+            android:parentActivityName=".layouthome"/>
+        <activity android:name=".SearchActivity"
+            android:parentActivityName=".layouthome"/>
+        <activity android:name=".TamuUndangan"
+            android:parentActivityName=".layouthome"/>
+        <activity android:name=".halamanvendor"
+            android:parentActivityName=".layoutvendor"/>
         <activity android:name=".layoutvendor" />
         <activity android:name=".layouttoko" />
-        <activity android:name=".layoutpengaturan" />
+        <activity android:name=".layoutpengaturan"
+            android:parentActivityName=".layoutakun"/>
         <activity
             android:name=".layoutlupapassword"
             android:label="LUPA PASSWORD"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".firstlogin" />
         <activity
             android:name=".layoutlogin"
             android:label="LOGIN"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".firstlogin" />
         <activity android:name=".layouthome" />
         <activity android:name=".layoutdaftar" />
         <activity android:name=".layoutakun" />
@@ -36,7 +45,9 @@
             android:name=".firsthomelogin05"
             android:label="DATA DASAR"
             android:parentActivityName=".layouthome" />
-        <activity android:name=".firsthomelogin04" />
+        <activity android:name=".firsthomelogin04"
+            android:label="DATA DASAR"
+            android:parentActivityName=".layouthome" />
         <activity
             android:name=".firsthomelogin03"
             android:label="DATA DASAR"
@@ -53,7 +64,8 @@
             android:name=".firstloginhome"
             android:label="DATA DASAR"
             android:parentActivityName=".layouthome" />
-        <activity android:name=".firstlogin">
+        <activity android:name=".firstlogin"
+            android:theme="@style/noAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

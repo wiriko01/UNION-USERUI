@@ -17,7 +17,8 @@
             app:srcCompat="@drawable/ic_search_icon"
             tools:ignore="VectorDrawableCompat"
             android:padding="5dp"
-            android:layout_marginRight="260dp" />
+            android:layout_marginRight="260dp"
+            android:onClick="searchtoko"/>
         <ImageView
             android:id="@+id/ImageViewToko2"
             android:layout_width="40dp"
@@ -26,7 +27,8 @@
             tools:ignore="VectorDrawableCompat"
             android:padding="5dp"
             android:layout_marginRight="20dp"
-            android:layout_toRightOf="@+id/ImageViewToko1" />
+            android:layout_toRightOf="@+id/ImageViewToko1"
+            android:onClick="boxtoko"/>
         <ImageView
             android:id="@+id/ImageViewToko3"
             android:layout_width="40dp"
@@ -35,24 +37,8 @@
             tools:ignore="VectorDrawableCompat"
             android:padding="5dp"
             android:layout_marginRight="300dp"
-            android:layout_toRightOf="@+id/ImageViewToko2"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cari Berdasarkan Kategori"
-            android:textStyle="bold"
-            android:id="@+id/TextViewToko1"
-            android:textColor="@color/Black"
-            android:layout_below="@id/ImageViewToko1"
-            android:layout_marginTop="15dp"/>
-        <Button
-            android:id="@+id/ButtonToko1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Filter"
-            android:layout_toRightOf="@+id/TextViewToko1"
-            android:layout_below="@id/ImageViewToko1"
-            android:layout_marginLeft="120dp"/>
+            android:layout_toRightOf="@+id/ImageViewToko2"
+            android:onClick="notiftoko"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -62,7 +48,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/ic_weddingphoto"
+            android:src="@drawable/weddingcake1"
             android:background="@color/white"
             android:layout_marginLeft="10dp"/>
         <ImageView
@@ -70,7 +56,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/location"
             android:layout_toRightOf="@+id/ImageViewToko4"
             android:layout_marginLeft="60dp"/>
         <ImageView
@@ -78,7 +64,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/dress1"
             android:layout_toRightOf="@id/ImageViewToko5"
             android:layout_marginLeft="60dp"/>
         <ImageView
@@ -86,7 +72,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/band1"
             android:layout_toRightOf="@id/ImageViewToko6"
             android:layout_marginLeft="60dp"/>
     </RelativeLayout>
@@ -99,7 +85,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/ic_weddingphoto"
+            android:src="@drawable/photographer1"
             android:background="@color/white"
             android:layout_marginLeft="10dp"/>
         <ImageView
@@ -107,7 +93,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/weddingplace1"
             android:layout_toRightOf="@+id/ImageViewToko8"
             android:layout_marginLeft="60dp"/>
         <ImageView
@@ -115,7 +101,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/wedshoes1"
             android:layout_toRightOf="@id/ImageViewToko9"
             android:layout_marginLeft="60dp"/>
         <ImageView
@@ -123,7 +109,7 @@
             android:scaleType="centerCrop"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/grey"
+            android:background="@drawable/silverring1"
             android:layout_toRightOf="@id/ImageViewToko10"
             android:layout_marginLeft="60dp"/>
     </RelativeLayout>
@@ -150,12 +136,12 @@
                     android:id="@+id/ImageViewToko12"
                     android:layout_width="350dp"
                     android:layout_height="150dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/bride1" />
                 <TextView
                     android:id="@+id/TextViewToko3"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="Tawaran"
+                    android:text="Wedding Organizer Disc 30%"
                     android:textColor="@color/Black"
                     android:layout_below="@id/ImageViewToko12"/>
                 <TextView
@@ -169,9 +155,18 @@
                     android:id="@+id/TextViewToko5"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="IDR 10,000,000"
+                    android:text="IDR 10,000,000   IDR 7,000,000"
                     android:textColor="@color/Black"
                     android:layout_below="@id/TextViewToko4"/>
+                <View
+                    android:id="@+id/viewtest2"
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/grey"
+                    android:height="2dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/TextViewToko5"/>
+
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -181,38 +176,133 @@
                     android:id="@+id/ImageViewToko13"
                     android:layout_width="350dp"
                     android:layout_height="150dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/marryimg3"/>
                 <TextView
                     android:id="@+id/TextViewToko6"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="Tawaran"
+                    android:text="Restaurant service Disc 20%"
                     android:textColor="@color/Black"
                     android:layout_below="@id/ImageViewToko13"/>
                 <TextView
                     android:id="@+id/TextViewToko7"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="Oleh vendor A"
+                    android:text="Oleh vendor B"
                     android:textColor="#999999"
                     android:layout_below="@id/TextViewToko6"/>
                 <TextView
                     android:id="@+id/TextViewToko8"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="IDR 10,000,000"
+                    android:text="IDR 10,000,000   IDR 7,000,000"
                     android:textColor="@color/Black"
                     android:layout_below="@id/TextViewToko7"/>
+                <View
+                    android:id="@+id/viewtest1"
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/grey"
+                    android:height="2dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/TextViewToko8"/>
             </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_marginTop="200dp"
+    <View
+        android:id="@+id/viewhomedivider"
+        android:background="@color/Black"
+        android:layout_marginTop="110dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:menu="@menu/bottom_app_bar"
-        app:itemTextColor="#000000"
-        android:background="@color/white"
-        app:itemIconSize="25dp" />
+        android:layout_height="3dp"
+        android:layout_marginBottom="4dp"/>
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageviewdivH1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/home"
+            android:layout_marginLeft="20dp"
+            android:onClick="tokotohome"/>
+        <TextView
+            android:id="@+id/textviewdivH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH1"
+            android:text="Home"
+            android:layout_marginLeft="17dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH2"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/vendor"
+            android:layout_toRightOf="@id/imageviewdivH1"
+            android:layout_marginLeft="70dp"
+            android:onClick="tokotovendor"/>
+        <TextView
+            android:id="@+id/textviewdivH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH2"
+            android:layout_toRightOf="@id/textviewdivH1"
+            android:text="Vendor"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-5dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH3"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/toko"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/imageviewdivH2" />
+        <TextView
+            android:id="@+id/textviewdivH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH3"
+            android:layout_toRightOf="@id/textviewdivH2"
+            android:text="Toko"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-7dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH4"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/ide"
+            android:layout_toRightOf="@id/imageviewdivH3"
+            android:layout_marginLeft="40dp"
+            android:onClick="tokotoide"/>
+        <TextView
+            android:id="@+id/textviewdivH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH4"
+            android:layout_toRightOf="@id/textviewdivH3"
+            android:text="Ide"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-7dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH5"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/profil"
+            android:layout_toRightOf="@id/imageviewdivH4"
+            android:layout_marginLeft="60dp"
+            android:onClick="tokotoprofile"/>
+        <TextView
+            android:id="@+id/textviewdivH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH5"
+            android:layout_toRightOf="@id/textviewdivH4"
+            android:text="Profil"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="-7dp"/>
+    </RelativeLayout>
 </LinearLayout>

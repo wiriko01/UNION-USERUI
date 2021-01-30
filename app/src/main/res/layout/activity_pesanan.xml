@@ -18,7 +18,7 @@
             android:background="@color/white"
             android:textColor="@color/maincolor"
             android:text="pesanan produk"/>
-        <view
+        <View
             android:id="@+id/divider1"
             android:layout_width="200dp"
             android:layout_height="2dp"
@@ -83,7 +83,7 @@
             android:layout_below="@id/textpesanan2"
             android:layout_marginLeft="10dp"
             android:textColor="@color/Black"/>
-        <view
+        <View
             android:id="@+id/pesanandivider1"
             android:layout_width="100dp"
             android:layout_height="3dp"
@@ -125,7 +125,8 @@
             android:layout_marginLeft="30dp"
             android:background="@color/maincolor"
             android:text="Checkout"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:onClick="metodePembayaran"/>
     </RelativeLayout>
 
 </LinearLayout>

@@ -18,7 +18,8 @@ class layoutpengaturan : AppCompatActivity() {
         var dialog = AlertDialog.Builder(this)
             .setTitle("Yakin Melakukan LogOut ?")
             .setPositiveButton("Ya", DialogInterface.OnClickListener{dialoginterface, i ->
-                Toast.makeText(this,"Berhasil LogOut", Toast.LENGTH_SHORT).show()
+                var tofirstlogin = Intent(this,firstlogin::class.java)
+                startActivity(tofirstlogin)
             })
             .setNegativeButton("Batal" ,DialogInterface.OnClickListener{ dialoginterface, i->
                 this.finish()

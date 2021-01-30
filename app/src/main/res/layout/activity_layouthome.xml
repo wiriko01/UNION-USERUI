@@ -11,44 +11,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/ImageViewHome1"
+            android:id="@+id/ImageViewToko1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_search_icon"
             tools:ignore="VectorDrawableCompat"
             android:padding="5dp"
-            android:layout_marginRight="260dp" />
+            android:layout_marginRight="260dp"
+            android:onClick="SearchHome"/>
         <ImageView
-            android:id="@+id/ImageViewHome2"
+            android:id="@+id/ImageViewToko2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/ic_box"
-            tools:ignore="VectorDrawableCompat"
+            android:background="@drawable/ic_box"
             android:padding="5dp"
             android:layout_marginRight="20dp"
-            android:layout_toRightOf="@+id/ImageViewHome1" />
+            android:layout_toRightOf="@+id/ImageViewToko1"
+            android:onClick="SearchBox"/>
         <ImageView
-            android:id="@+id/ImageViewHome3"
+            android:id="@+id/ImageViewToko3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_notif"
             tools:ignore="VectorDrawableCompat"
             android:padding="5dp"
             android:layout_marginRight="300dp"
-            android:layout_toRightOf="@+id/ImageViewHome2"/>
+            android:layout_toRightOf="@+id/ImageViewToko2"
+            android:onClick="notif"/>
     </RelativeLayout>
-
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Update Data Pernikahan"
         android:layout_marginTop="10dp"
-        android:background="@color/white" />
+        android:background="@color/maincolor"
+        android:textColor="@color/white"
+        android:onClick="updateData"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
         <TextView
             android:id="@+id/TextViewHome001"
             android:layout_width="wrap_content"
@@ -90,7 +93,8 @@
             android:layout_toRightOf="@id/TextViewHome004"
             android:textColor="@color/white"
             android:background="@color/maincolor"
-            android:layout_marginLeft="100dp"/>
+            android:layout_marginLeft="100dp"
+            android:onClick="tamuUndangan"/>
         <TextView
             android:id="@+id/TextViewHome005"
             android:layout_width="wrap_content"
@@ -132,7 +136,7 @@
                     android:id="@+id/ImageViewHome4"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning1"/>
                 <TextView
                     android:id="@+id/TextViewHome008"
                     android:layout_width="150dp"
@@ -183,7 +187,7 @@
                     android:id="@+id/ImageViewHome10"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning2"/>
                 <TextView
                     android:id="@+id/TextViewHome009"
                     android:layout_width="150dp"
@@ -234,7 +238,7 @@
                     android:id="@+id/ImageViewHome16"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@color/grey"/>
+                    android:background="@drawable/weddingplanning3"/>
                 <TextView
                     android:id="@+id/TextViewHome0010"
                     android:layout_width="150dp"
@@ -279,13 +283,270 @@
             </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_marginTop="315dp"
+
+    <TextView
+        android:id="@+id/TextViewHome0011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Restaurant di Medan"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ImageViewHome22"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning1"/>
+                <TextView
+                    android:id="@+id/TextViewHome0012"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant 1"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome22"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome23"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome23"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome25"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome24"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome26"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome25"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome27"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0012"
+                    android:layout_toRightOf="@id/ImageViewHome26"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/ImageViewHome28"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning2"/>
+                <TextView
+                    android:id="@+id/TextViewHome013"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wedding Planning 2"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome28"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome29"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome30"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome29"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome31"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome30"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome32"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome31"/>
+                <ImageView
+                    android:id="@+id/ImageViewHom33"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome013"
+                    android:layout_toRightOf="@id/ImageViewHome32"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/ImageViewHome34"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/weddingplanning3"/>
+                <TextView
+                    android:id="@+id/TextViewHome0014"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wedding Planning 2"
+                    android:textColor="@color/Black"
+                    android:layout_below="@id/ImageViewHome34"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome35"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome36"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome35"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome37"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome36"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome38"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome37"/>
+                <ImageView
+                    android:id="@+id/ImageViewHome39"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@mipmap/ic_star"
+                    android:layout_below="@id/TextViewHome0014"
+                    android:layout_toRightOf="@id/ImageViewHome38"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:id="@+id/viewhomedivider"
+        android:background="@color/Black"
+        android:layout_marginTop="23dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:menu="@menu/bottom_app_bar"
-        app:itemTextColor="#000000"
-        android:background="@color/white"
-        app:itemIconSize="25dp" />
+        android:layout_height="3dp"
+        android:layout_marginBottom="4dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageviewdivH1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/home"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/textviewdivH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH1"
+            android:text="Home"
+            android:layout_marginLeft="17dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH2"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/vendor"
+            android:layout_toRightOf="@id/imageviewdivH1"
+            android:layout_marginLeft="70dp"
+            android:onClick="hometovendor"/>
+        <TextView
+            android:id="@+id/textviewdivH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH2"
+            android:layout_toRightOf="@id/textviewdivH1"
+            android:text="Vendor"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-5dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH3"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/toko"
+            android:layout_toRightOf="@id/imageviewdivH2"
+            android:layout_marginLeft="45dp"
+            android:onClick="hometotoko"/>
+        <TextView
+            android:id="@+id/textviewdivH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH3"
+            android:layout_toRightOf="@id/textviewdivH2"
+            android:text="Toko"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-7dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH4"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/ide"
+            android:layout_toRightOf="@id/imageviewdivH3"
+            android:layout_marginLeft="40dp"
+            android:onClick="hometoide"/>
+        <TextView
+            android:id="@+id/textviewdivH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH4"
+            android:layout_toRightOf="@id/textviewdivH3"
+            android:text="Ide"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-7dp"/>
+        <ImageView
+            android:id="@+id/imageviewdivH5"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:background="@mipmap/profil"
+            android:layout_toRightOf="@id/imageviewdivH4"
+            android:layout_marginLeft="60dp"
+            android:onClick="hometoprofil"/>
+        <TextView
+            android:id="@+id/textviewdivH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewdivH5"
+            android:layout_toRightOf="@id/textviewdivH4"
+            android:text="Ide"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="-7dp"/>
+    </RelativeLayout>
 </LinearLayout>

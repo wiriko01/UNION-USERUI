@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\File\\Note\\Semester 5\\UAS\\PKTI\\UNION_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
+            "outputFile": "D:\\File\\Note\\Semester 5\\UNION_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ludius\\.gradle\\caches\\transforms-2\\files-2.1\\9f8c6bf6d6cfede505145b0a0a600913\\appcompat-1.2.0\\res\\values-en-rGB\\values-en-rGB.xml",
